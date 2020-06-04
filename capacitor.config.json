@@ -1,0 +1,13 @@
+{
+  "appId": "dam2.danielcastelao.org",
+  "appName": "AgendaIonic",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

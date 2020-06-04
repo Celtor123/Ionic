@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AgendaIonic</string>
+    <string name="title_activity_main">AgendaIonic</string>
+    <string name="package_name">dam2.danielcastelao.org</string>
+    <string name="custom_url_scheme">dam2.danielcastelao.org</string>
+</resources>
