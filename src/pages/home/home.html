@@ -4,14 +4,50 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+<ion-content>
+<br padding>
+  <h2 >Ventana Principal</h2>
+  <p class="uno">
+    Este proyecto está creado específicamente para un proyecto de Programación
+    Multimedia y Dispositivos Móviles.
+  </p>
+  <p class="dos">
+    Selecciona un producto y saldrá su relativo precio de mercado
+  </p>
+  <p class="tres">
+    pd: No me hago responsable de la variación de precios, inflación y/o evolución de
+    los precios en un futuro. Esto es una media, no refleja ni valores ni costos reales.
+  </p>
+
+    <ion-list>
+
+      <ion-item>
+        <ion-label stacked color="primary">Selecciona hora</ion-label>
+        <ion-datetime displayFormat="hh:mm" pickerFormat="hh mm"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Elija su compra</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-select [(ngModel)]="a">
+          <ion-option value="na" >nabo</ion-option>
+          <ion-option value="to">Tomate</ion-option>
+          <ion-option value="pi">Pimiento</ion-option>
+          <ion-option value="ch">Chorizo</ion-option>
+          <ion-option value="za">Zanahoria</ion-option>
+          <ion-option value="qu">Queso</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+  <button ion-button color="secondary" (click)="onSelect(a.toString())">Aceptar</button>
+  <button ion-button color="primary">Cancelar</button>
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    <ion-label>{{url}}</ion-label>
   </p>
+
 </ion-content>
